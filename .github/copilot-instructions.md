@@ -5,7 +5,7 @@ description: Programming guidelines
 
 Prepare a working plan, don't proceed to coding without me approving it
 
-When the plan is approved create a todo.md with the tasks to be executed
+Ask me if you need any clarifications or additional information before proceeding
 
 The project should be self-contained and buildable from the root directory without manual intervention
 
