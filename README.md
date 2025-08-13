@@ -1,24 +1,36 @@
 # agent-dev-plan
 
-1. Initial prompt for creating Product Requirements Document (PRD)
+Workflows for AI-assisted software development inspired by [ai-dev-tasks](https://github.com/snarktank/ai-dev-tasks) and tailored for GitHub Copilot
 
-    ```bash
-    Help me create a Product Requirements Document (PRD) as prd.md file. Here what we're building:
-    [Overview]
+## 1. Defining Scope: Product Requirement Document (PRD)
 
-    The tech stack I know I will use is:
-    * [Tech Stack 1]
-    * [Tech Stack 2]
+Generate PRD by ```create-prd.md``` and providing the basic project goal as input
 
-    These are the features I want to include:
-    * [Feature 1]
-    * [Feature 2]
+Use the best thinking model for this stage
 
-    I'm building this with an AI agent, I don't need any team milestones, timelines or anything like that.
-    Ask me if you have any questions for clarification, and continue to write PRD.
-    ```
+```
+Use #file:create-prd.instructions.md
+Here's the feature I want to build: [Describe your feature in detail]
+Preferred tech stack: [Optional: list your preferred technologies, frameworks, and tools]
+Reference these files to help you: [Optional: #file:file1.py #file:file2.ts]
+```
 
-2. Prompt for passing PRD to AI agent
+## 2. Detailed Planning: Task Breakdown
 
-    ```bash
-    ```
+Define tasks by ```generate-tasks.instructions.md``` and providing the generated ```prd-[project-name].md``` as input
+
+```
+Now take #file:prd-[project-name].md and create tasks using #file:generate-tasks.md
+```
+
+## 3. Manually review the tasks list
+
+## 4. Iterative Implementation: One Task at a Time
+
+Start implementation by ```process-task-list.instructions.md``` and providing the generated ```tasks-list-[project-name].md``` as input
+
+```
+Please start on task 1.1 and use #file:process-task-list.md
+```
+
+## 5. Review the task execution
