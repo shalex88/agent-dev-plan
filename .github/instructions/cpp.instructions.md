@@ -9,9 +9,13 @@ Use C++20
 
 Support only GCC compiler
 
-For dependencies management use vcpkg in manifest mode
+Use CMake as a build, test, packaging and installation system
 
-Use CMake for build system
+For dependencies management use vcpkg manifest mode, install vcpkg through CMake using FetchContent to automatically download and configure vcpkg
+
+For testing use GoogleTest
+
+Use spdlog for logging
 
 Use ```#pragma once``` in header files
 
@@ -24,3 +28,5 @@ Use CamelCase for class names
 Use Stroustrup style for C++ code
 
 Don't use raw pointers, use smart pointers instead
+
+Use Result<T, E> for error handling

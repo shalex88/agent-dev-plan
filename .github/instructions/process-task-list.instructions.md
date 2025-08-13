@@ -1,3 +1,7 @@
+---
+description: Task List Management
+---
+
 # Task List Management
 
 Guidelines for managing task lists in markdown files to track progress on completing a PRD
@@ -10,6 +14,8 @@ Guidelines for managing task lists in markdown files to track progress on comple
     - **First**: Run the full test suite (`pytest`, `npm test`, `bin/rails test`, etc.)
     - **Only if all tests pass**: Stage changes (`git add .`)
     - **Clean up**: Remove any temporary files and temporary code before committing
+    - **Never commit build artifacts**: Ensure build directories, compiled binaries, object files, and other generated artifacts are excluded from staging (use .gitignore)
+    - **Mark parent task complete**: Change the parent task from `[ ]` to `[x]` before committing
     - **Commit**: Use a descriptive commit message that:
       - Uses conventional commit format (`feat:`, `fix:`, `refactor:`, etc.)
       - Summarizes what was accomplished in the parent task
@@ -20,7 +26,7 @@ Guidelines for managing task lists in markdown files to track progress on comple
         ```
         git commit -m "feat: add payment validation logic" -m "- Validates card type and expiry" -m "- Adds unit tests for edge cases" -m "Related to T123 in PRD"
         ```
-  3. Once all the subtasks are marked completed and changes have been committed, mark the **parent task** as completed.
+  3. The parent task is now marked as completed and committed with all its subtasks.
 - Stop after each sub‑task and wait for the user's go‑ahead.
 
 ## Task List Maintenance

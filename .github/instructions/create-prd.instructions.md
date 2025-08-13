@@ -1,3 +1,7 @@
+---
+description: Generating a Product Requirements Document (PRD)
+---
+
 # Rule: Generating a Product Requirements Document (PRD)
 
 ## Goal
