@@ -9,7 +9,7 @@ Use C++20
 
 Support only GCC compiler
 
-For dependencies management use vcpkg
+For dependencies management use vcpkg in manifest mode
 
 Use CMake for build system
 
