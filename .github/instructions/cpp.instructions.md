@@ -21,6 +21,8 @@ Use ```#pragma once``` in header files
 
 Use camelCase for function and methods names
 
+Use snake_case for variable names
+
 Use _ suffix for private member variables
 
 Use CamelCase for class names
